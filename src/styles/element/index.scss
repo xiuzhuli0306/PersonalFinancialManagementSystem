@@ -1,0 +1,18 @@
+$--colors: (
+  'primary': ('base': #0f172a,
+  ),
+  'success': ('base': #10b981,
+  ),
+  'warning': ('base': #f59e0b,
+  ),
+  'danger': ('base': #ef4444,
+  ),
+  'error': ('base': #dc2626,
+  ),
+  'info': ('base': #64748b,
+  ),
+);
+/* just override what you need */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with ($colors: $--colors);
+
+@use "element-plus/theme-chalk/src/index.scss" as *;
